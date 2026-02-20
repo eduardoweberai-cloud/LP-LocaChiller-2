@@ -1,0 +1,29 @@
+# AIOS Project Configuration
+version: 2.1.0
+
+project:
+  name: locachiller-landing-page
+  type: brownfield
+  created: 2026-02-19
+
+environment:
+  bootstrapped: true
+  bootstrap_date: 2026-02-19T14:30:00Z
+  platform: windows-mingw64
+
+workflow:
+  current: story-driven-development
+  phase: 2-active-development
+
+permissions:
+  mode: ask  # Permission mode: explore (read-only), ask (confirm changes), auto (full autonomy)
+
+settings:
+  auto_update_status: true
+  quality_gates_enabled: true
+  coderabbit_enabled: false  # Not installed yet
+
+git:
+  remote: https://github.com/eduardoweberai-cloud/LP-LocaChiller-2.git
+  branch: main
+  authenticated: true
